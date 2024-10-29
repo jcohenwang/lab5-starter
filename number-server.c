@@ -13,6 +13,7 @@ void handle_404(int client_sock, char *path)  {
     // snprintf includes a null-terminator
 
     // TODO: send response back to client?
+    write(client_sock, response_buff, strlen(response_buff));
 }
 
 
